@@ -16,6 +16,8 @@ public class MainLista {
 
       lista.pasarDigitos(546781);
       System.out.println(lista.toString());
+      lista.eliminarPares();
+      System.out.println(lista.toString());
 //        lista.rotarIzqDer(1);
 //        System.out.println(lista.toString());
 //        lista.rotarDerIzq(1);
@@ -25,9 +27,9 @@ public class MainLista {
 //        lista.eliminarUlt(2);
 //        System.out.println(lista.toString());
 
-        l2.pasarDigitos(123);
-        System.out.println(l2.toString());
-        lista.insertarIesimo2(l2,2);
-        System.out.println(lista.toString());
+//        l2.pasarDigitos(123);
+//        System.out.println(l2.toString());
+//        lista.insertarIesimo2(l2,2);
+//        System.out.println(lista.toString());
     }
 }

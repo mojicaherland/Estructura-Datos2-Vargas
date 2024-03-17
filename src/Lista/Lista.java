@@ -26,19 +26,12 @@ public class Lista {
         return s1 + "]";
     }
 
-    //imprimir la lista
-    public void imprimirLista(Lista lista) {
-        for (int i = 0; i < arreglo.length; i++) {
-            System.out.print(arreglo[i] + " ");
-        }
-    }
-
     //Otros metodos
     public void insertarIesimo(int x, int i) {
         int k = this.cantElem - 1;
         while (k >= i) {
             this.arreglo[k + 1] = this.arreglo[k];
-            k = k - 1;
+            k--;
         }
         this.arreglo[i] = x;
         this.cantElem++;
@@ -69,7 +62,7 @@ public class Lista {
         this.elimarIesimo(this.cantElem - 1);
     }
 
-    public void eliminarTodo(int x) { //elimina datos repetidos de un vector
+    public void eliminarTodo(int x) { //elimina datos repetidos de un vector/lista
         int i = 0;
         while (i < this.cantElem) {
             if (this.arreglo[i] == x) {
@@ -86,8 +79,9 @@ public class Lista {
         while (i < this.cantElem) {
             if (this.arreglo[i] % 2 == 0) {
                 this.elimarIesimo(i);
+            }else{
+                i++;
             }
-            i++;
         }
     }
 
