@@ -6,9 +6,9 @@ public class MainListaPrueba {
         ListaPrueba l2 = new ListaPrueba(10);
         ListaPrueba l3 = new ListaPrueba(10);
 
-        listaPrueba.insertarIesimo(1, 0);
-        listaPrueba.insertarIesimo(2, 1);
-        listaPrueba.insertarIesimo(2, 2);
+        listaPrueba.insertarIesimo(2, 0);
+        listaPrueba.insertarIesimo(3, 1);
+        listaPrueba.insertarIesimo(4, 2);
         listaPrueba.insertarIesimo(5, 3);
         System.out.println("Lista 1: " + listaPrueba.toString());
 
@@ -22,7 +22,7 @@ public class MainListaPrueba {
 //        l3.eliminarPrim(2);
 //        System.out.println(l3.toString());
 
-        listaPrueba.eliminarVeces(2);
+        listaPrueba.eliminarAlternos();
         System.out.println("Lista Mesclada: " + listaPrueba.toString());
     }
 

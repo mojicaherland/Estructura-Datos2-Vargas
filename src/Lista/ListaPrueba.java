@@ -220,4 +220,16 @@ public class ListaPrueba {
         }
     }
 
+    //L1.eliminarAlternos() : Método que elimina los elementos
+    // de las posiciones alternas. (permanece, se elimina, permanece, se elimina, etc.)
+    public void eliminarAlternos() {
+        int i = 0;
+        while (i < this.cantElement) {
+            if (this.arreglo[i] % 2 == 0){
+                this.eliminarIesimo(i);
+            }else{
+                i++;
+            }
+        }
+    }
 }
