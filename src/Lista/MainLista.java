@@ -14,10 +14,6 @@ public class MainLista {
 //        lista.eliminarUltimo();
 //       System.out.println(lista);
 
-      lista.pasarDigitos(546781);
-      System.out.println(lista.toString());
-      lista.eliminarPares();
-      System.out.println(lista.toString());
 //        lista.rotarIzqDer(1);
 //        System.out.println(lista.toString());
 //        lista.rotarDerIzq(1);
@@ -31,5 +27,10 @@ public class MainLista {
 //        System.out.println(l2.toString());
 //        lista.insertarIesimo2(l2,2);
 //        System.out.println(lista.toString());
+        lista.insertarIesimo(10, 0);
+        lista.insertarIesimo(20, 1);
+        lista.insertarIesimo(30, 2);
+        System.out.println("Lista 1: " + lista.toString());
+
     }
 }
