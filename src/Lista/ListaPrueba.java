@@ -222,5 +222,7 @@ public class ListaPrueba {
 
     //L1.eliminarAlternos() : Método que elimina los elementos
     // de las posiciones alternas. (permanece, se elimina, permanece, se elimina, etc.)
-
+    public void saludar() {
+        System.out.println("Hola");
+    }
 }
