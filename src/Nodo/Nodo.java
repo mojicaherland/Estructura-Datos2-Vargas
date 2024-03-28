@@ -1,10 +1,10 @@
 package Nodo;
 
 public class Nodo {
-    public int elem; //dato del nodo
-    public Nodo prox; // puntero que apunta al sgt nodo
+    public int elem;
+    public Nodo prox;
 
-    public Nodo(int elem, Nodo prox) { //constructor
+    public Nodo(int elem, Nodo prox) {
         this.elem = elem;
         this.prox = prox;
     }
